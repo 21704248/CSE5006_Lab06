@@ -12,7 +12,7 @@ const Article = db.define('articles', {
 // queries to execute in order by chaining with `then`.
 
 // Q1: This query finds the article with id of 2
-Article.findByPk(2)
+Article.findByPk(2) // Reference a Table where Pk == 2 (Pk: Primary key)
 .then(article => {
   console.log('# Article with id=2');
   console.log(article.dataValues);
